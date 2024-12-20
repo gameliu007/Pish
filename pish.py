@@ -5,7 +5,7 @@ from torch.autograd import Variable
 import torch.nn as nn
 import numpy as np
 
-def gs_gs(x, s = 1 , h = 0, v = 0 ):
+def gs_gs(x, s = 1 , h = 0, v = 0 ):          # The control function is graphically displayed as "control function.png"
 
     return torch.exp(-(x) * (x) * s + h) + v
 
