@@ -5,9 +5,9 @@ from torch.autograd import Variable
 import torch.nn as nn
 import numpy as np
 
-def gs_gs(x, a = 1 , b = 0,c = 0 ):
+def gs_gs(x, s = 1 , h = 0, v = 0 ):
 
-    return torch.exp(-(x) * (x) * a + b) + c
+    return torch.exp(-(x) * (x) * s + h) + v
 
 class pish(nn.Module):
     def __init__(self):
